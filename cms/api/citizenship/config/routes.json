@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/citizenships",
+      "handler": "citizenship.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/citizenships/count",
+      "handler": "citizenship.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/citizenships/:id",
+      "handler": "citizenship.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/citizenships",
+      "handler": "citizenship.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/citizenships/:id",
+      "handler": "citizenship.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/citizenships/:id",
+      "handler": "citizenship.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

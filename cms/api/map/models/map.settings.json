@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "maps",
+  "info": {
+    "name": "Map",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Longitude": {
+      "type": "float"
+    },
+    "Latitude": {
+      "type": "float"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Thumbnail": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
